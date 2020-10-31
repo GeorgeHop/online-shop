@@ -1,0 +1,31 @@
+/*лицо магазина*/
+#catagory {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /*margin: 20px auto;*/
+
+}
+
+.product {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 10px;
+    box-shadow: 2px 2px 2px;
+}
+
+
+.img_cat {
+  height: 65%;
+  width: 65%;
+  display:block;
+  margin: 0 auto;
+  z-index: -9999999;
+}
+
+.product  h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+

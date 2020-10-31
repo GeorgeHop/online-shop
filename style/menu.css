@@ -1,0 +1,117 @@
+.hidden-menu {
+  display: block;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 390px;
+    background-color: white;
+    height: 100%;
+    top: 0;
+    border-style: inherit;
+    left: -390px;
+    transition: left .7s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    box-shadow: 2px 2px 2px black;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu {
+  color: black;
+    background-color: white;
+    padding: 5px;
+    position: fixed;
+    top: 15px;
+    left: 40px;
+    cursor: pointer;
+    transition: left .23s;
+    border-radius: 5px;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  box-shadow: 2px 2px 2px;
+}
+
+.btn-menu span {
+  display: block;
+  height: 6px;
+  background-color: black;
+  margin: 9px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+  top: 3px;
+  left: 0px;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 310px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 18px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
+.hidden-menu li  {
+  position: relative;
+  top: 109px;
+  left: 56px;
+  margin: 30px;
+  font-size: 50px;
+}
+
+.userInfo {
+  width: 330px;
+  height: 250px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #000;
+  /*border-color: black;*/
+  position: relative;
+  top: 99px;
+  left: 11px;
+}
+
+.userInfo img {
+  position: relative;
+  top: 10px;
+  left: 230px;
+  height: 80px;
+  width: 80px;
+  background: white;
+  border: none;
+  border-radius: 40px;
+}
+
+ h1.userInfo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+h2.userInfo {
+  position: absolute;
+  top: 70px;
+  left: 200px;
+}
+

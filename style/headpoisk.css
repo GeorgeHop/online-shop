@@ -1,0 +1,83 @@
+/*шапка*/
+.head {
+    width: 100%;
+    height: 60px;
+    background: white;
+    position: fixed;
+    box-shadow: 3px 3px 3px black;
+    padding: 10px;
+    border: 1px solid #333;
+    display: flex;
+    z-index: 3;
+}
+
+/*.d6 - стилизация поиска*/
+.d6 {
+    background: white;
+   /* width: 160px;*/
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    /*float: right;*/
+  
+}
+
+
+.d6 form {
+    background: white;
+    width: 200px;
+    height: 45px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.d6 input {
+  height: 100%;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.d6 input:focus {
+	width: 220px;
+	z-index: 1;
+	border-bottom: 2px solid black;
+}
+
+.d6 button {
+  background: white;
+  border: 2px black;
+  border-style: solid;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.d6 img {
+position: relative;
+top: 0px;
+left: -3px;
+width: 34px;
+}
+
+h4 {
+  /*width: 151px;*/
+ /* height: 20px;*/
+  position: absolute;
+  font-size: 40px;
+  left: 150px;
+  top: -30px;
+}

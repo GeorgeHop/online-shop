@@ -1,0 +1,32 @@
+.item {
+    width: 350px;
+    height: 587px;
+    min-height: 200px;
+    background: white;
+    position: fixed;
+    top: 95px;
+    left: 113px;	
+}
+
+.item h1 {
+    position: relative;
+    top: -7px;
+    left: 51px;
+    font-family: monospace;
+}
+
+.item h2 {
+  position: relative;
+  top: -33px;
+  left: 50px;
+  font-family: monospace;
+}
+
+.item img {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 250px;
+  height: 250px;
+}
+

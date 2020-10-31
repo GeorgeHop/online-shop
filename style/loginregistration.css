@@ -1,0 +1,158 @@
+a.boot {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 32px;
+  width: 104px;
+  height: 24px;
+ /* margin: 10px auto;*/
+  
+  padding: 14px 24px 12px;
+  
+  font-family: "Helvetica";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 21px;
+  text-decoration: none;
+  text-align: center;
+  color: #2d2d2d;
+
+  overflow: hidden;
+  -webkit-transform: translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  
+  
+}
+
+
+a.boot:after {
+  padding: 0;
+  border: 2px solid #000000;
+  content: '';
+  width: 95%;
+  height: 46px;
+  display: block;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+a.boot:before {
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  content: '';
+  width: 100%;
+  height: 60px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-left: 15px solid white;
+  box-shadow: -20px 30px 30px white;
+  background: transparent;
+  top: 0px;
+  left: -15px;
+  margin-left: -1px;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+ a.boot:hover:before, a.boot:active:before, a.boot:focus:before {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: translate(115%, 0);
+  -moz-transform: translate(115%, 0);
+  -ms-transform: translate(115%, 0);
+  -o-transform: translate(115%, 0);
+  transform: translate(115%, 0);
+}
+
+.input {
+ position: relative;
+    top: -5px;
+    left: 66px;
+    width: 320px;
+    height: 54px;
+    padding: 5px;
+}
+
+.text {
+	width: 270px;
+    height: 39px;
+    border-radius: 5px;
+    font-size: 18px;
+    border-style: double;
+    padding:6px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.button {
+    width: 220px;
+    height: 39px;
+    position: relative;
+    top: 5px;
+    left: 102px;
+    /* border-radius: inherit; */
+    margin: 10px;
+    background: white;
+    border: 5px black;
+    border-style: double;
+    box-shadow: 2px 2px 2px;
+}
+
+#startBtn {
+    font-family: monospace;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: black;
+    border: gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px darkgrey;
+    position: relative;
+    top: 15px;
+    transition: all ease 0.3s;
+}
+
+#startBtn:active {
+  box-shadow: 0 3px 0 #00823F;
+  top: 3px;
+}
+
+#startBtn button a {
+  text-decoration: none;
+}
+
+form p .buttBlock {
+  position: relative;
+  top: 150px;
+  left: 820px;
+  width: 320px;
+  height: 54px;
+  padding: 12px;
+}
+
+.register {
+  position: relative;
+    top: 250px;
+    left: 700px;
+    width: 430px;
+    height: 480px;
+    border: 3px black;
+    border-style: groove;
+    box-shadow: 2px 2px 2px black;
+}
+
+.register h1 {
+  position: relative;
+    top: 8px;
+    left: 115px;
+    font-family: monospace;
+    font-size: 34px;
+    color: black;
+}

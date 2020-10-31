@@ -1,0 +1,96 @@
+nav {
+   /* width: 1200px;*/
+    height: 30px;
+    position: absolute;
+    left: 490px;
+    padding: 5px;
+}
+
+#slow_nav > ul{
+    /*width: 600px;*/
+    margin: 5px auto;
+    z-index: 99999;
+}
+ 
+#slow_nav > ul > li{
+    list-style: none;
+   /* width: 80px;*/
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    z-index: 99999;
+}
+ 
+#slow_nav a{text-decoration:none;}
+ 
+#slow_nav > ul > li > a{
+    font-size: 22px;
+    font-family: monospace;
+   /* padding: 15px;*/
+    margin: 5px 15px;
+    background-color: white;
+    color: black;
+}
+ 
+#slow_nav li ul{
+    position:absolute;
+    list-style:none;
+    text-align:center;
+    top:15px;
+    font-size:18px;
+    left:0;
+    margin:0;
+    padding:0;
+ 
+/* ДАННЫЕ СТРОКИ НУЖНЫ ДЛЯ ПРАВИЛЬНОЙ РАБОТЫ АНИМАЦИИ */
+    max-height:0px;
+    overflow:hidden;
+    -webkit-transition:max-height 0.4s linear;
+    -moz-transition:max-height 0.4s linear;
+    transition:max-height 0.4s linear;
+/* КОНЕЦ */
+}
+ 
+#slow_nav li:hover ul{
+    max-height:300px;
+}
+ 
+#slow_nav li ul li{
+    background-color:#333;
+    border-bottom:1px solid #888;
+}
+ 
+#slow_nav li ul li:last-child{
+    border-bottom:none;
+}
+ 
+#slow_nav li ul li a{
+    padding:5px 12px;
+    color:#fff;
+    display:block;
+}
+ 
+#slow_nav li ul li:hover{
+    background-color:#444;
+}
+ 
+#slow_nav li ul li:first-child{
+    margin-top:25px;
+    position:relative;
+}
+ 
+#slow_nav li ul li:first-child:before{
+    content:'';
+    position:absolute;
+    width:1px;
+    height:1px;
+    border:5px solid transparent;
+    border-bottom-color:#333;
+    left:10px;
+    top:-10px;
+}
+
+#slow_nav li:hover ul{
+    max-height:300px;
+}

@@ -1,0 +1,13 @@
+ #content {
+    width: 500px; /* Ширина слоя */
+    margin: 0 auto 50px; /* Выравнивание по центру */
+   }
+   #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: white;
+    color: black;
+    width: 100%;
+   }
